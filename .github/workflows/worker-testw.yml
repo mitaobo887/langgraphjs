@@ -16,4 +16,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+			- name: Setup Node.js
+				uses: actions/setup-node@v4
+				with:
+					# node-version-file: ".nvmrc"
+					registry-url: "https://registry.npmjs.org"
+					# cache: "pnpm"
+			- uses: oven-sh/setup-bun@v2
+				with:
+					bun-version: latest
+
+			- name: bun install
+				# run: bun install --development
+				run: bun install --frozen-lockfile
+				shell: bash
+
       - run: echo "Hello, world!"
