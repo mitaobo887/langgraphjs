@@ -26,9 +26,4 @@ jobs:
 				with:
 					bun-version: latest
 
-			- name: bun install
-				# run: bun install --development
-				run: bun install --frozen-lockfile
-				shell: bash
-
       - run: echo "Hello, world!"
