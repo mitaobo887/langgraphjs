@@ -12,6 +12,7 @@ permissions:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 jobs:
+	timeout-minutes: 30
   build:
     runs-on: ubuntu-latest
     steps:
