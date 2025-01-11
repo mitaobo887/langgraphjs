@@ -1,1 +1,10 @@
-bmFtZTogd29ya2VyLXRlc3R3Cm9uOgogIHB1c2g6CiAgICBicmFuY2hlczoKICAgICAgLSBtYWluCmpvYnM6CiAgdGVzdDoKICAgIHJ1bnMtb246IHVidW50dS1sYXRlc3QKICAgIHN0ZXBzOgogICAgICAtIHJ1bjogZWNobyAiSGVsbG8sIHdvcmxkISIK
+name: worker-testw
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
