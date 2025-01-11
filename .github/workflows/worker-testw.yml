@@ -26,4 +26,8 @@ jobs:
 				with:
 					bun-version: latest
 
+			- name: install dependencies
+				run: bun install -g gomtm
+				shell: bash
+
       - run: echo "Hello, world!"
